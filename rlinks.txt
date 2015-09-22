@@ -1,0 +1,9 @@
+https://stackoverflow.com/questions/17240536/r-unary-operator-error-from-multiline-ggplot2-command
+https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml#indentation
+https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf
+http://www.cookbook-r.com/Formulas/Creating_a_formula_from_a_string/
+https://stat.ethz.ch/R-manual/R-patched/library/stats/html/formula.html
+http://www.r-tutor.com/r-introduction/data-frame
+http://www.r-tutor.com/r-introduction/vector
+http://www.statmethods.net/management/userfunctions.html
+http://www.inside-r.org/packages/cran/doBy
