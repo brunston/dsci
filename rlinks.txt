@@ -6,4 +6,4 @@ https://stat.ethz.ch/R-manual/R-patched/library/stats/html/formula.html
 http://www.r-tutor.com/r-introduction/data-frame
 http://www.r-tutor.com/r-introduction/vector
 http://www.statmethods.net/management/userfunctions.html
-http://www.inside-r.org/packages/cran/doBy 
+http://www.inside-r.org/packages/cran/doBy
