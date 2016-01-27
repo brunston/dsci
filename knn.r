@@ -36,3 +36,17 @@ plot.sqft.price.log <- plot(log(dat.sale$gross.sqft),log(dat.sale$sale.price.n))
 dat.homes <- dat.sale[which(grepl("FAMILY",dat.sale$building.class.category)),]
 plot.sqft.price.fam <- plot(log(dat.homes$gross.sqft,log(dat.homes$sale.price.n)))
 
+dat.homes[which(dat.homes$sale.price.n<100000),]
+	[order(dat.homes[which(dat.homes$sale.price.n<100000),]
+	$sale.price.n),]
+
+#remove outliers that weren't sales
+
+dat.homes$outliers <- (log(dat.homes$sale.price.n) <=5) + 0
+dat.homes <- dat.homes[which(dat.homes$outliers==0),] #adjust dat.homes to not include these
+
+plot.sqft.price.fam.clean <- plot(log(dat.homes$gross.sqft),log(dat.homes$sale.price.n))
+
+#now we can actually do some linear regression
+model.a <- lm(log(dat.homes$sale.price.n) ~ log(dat.homes$gross.sqft))
+
