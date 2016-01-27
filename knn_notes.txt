@@ -1,0 +1,38 @@
+Notes on k-NN
+
+What is k-NN?
+It's used for when you want to bin data
+	eg Thumbs up, thumbs down, likely a particular political party
+	not necessarily a continuous scale like a credit score, but also possible.
+
+How to implement k-NN
+1. Decide on distance metric
+2. Split dataset into training and test dataset (like in playgod.r)
+3. Choose evaluative metric (eg misclassification)
+4. Run k-NN, change k and check the evaluative metric (where k is the number of nearest-neighbors you are comparing the distances with)
+5. Optimize k by choosing the k with highest evaluative metric value
+6. After choosing k, use same training set but replace test dataset with set for which there are no labels (which you want to predict labels for)
+
+Nota Bene: We have to make sure that the variables are on the same scale so that the distance metric is not dominated by one particular variable.
+
+Potential distance metrics:
+Euclidean:
+    pythagorean theorem
+Cosine similarity yields values between -1 and 1:
+    if x and y are vectors, cos(x,y) = (x dot y)/(|x||y|)
+Jaccard Distance / Similarity:
+    J(a,B) = |A union B|/|A intersection B|
+    (this is the fraction: # of elements in A and/or B / # of elements in both A and B)
+Hamming Distance:
+	Used for comparing DNA (olive and ocean gives 4 [# of letters different in str])
+Manhattan:
+	if x and y are vectors, d(x,y) = sum(i,k)(|x_i-y_i|), i is ith element of each vector
+	(Distance between two real k-dimensional vectors)
+
+Sensitivity and Specificity:
+	Sensitivity rate: True positive rate (true negative rate)
+	Specificity: True negative rate
+	False positive rate
+	False negative rate
+
+
